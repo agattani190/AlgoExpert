@@ -2,7 +2,7 @@
 using namespace std;
 
 // Time Complexity: O(n^2)
-// Space Complexity: O(1)
+// Space Complexity: O(n)
 vector<vector<int> > threeNumberSum(vector<int> array, int targetSum)
 {
     sort(array.begin(), array.end());

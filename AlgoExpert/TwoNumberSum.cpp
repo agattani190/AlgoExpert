@@ -2,7 +2,7 @@
 using namespace std;
 
 // Time Complexity: O(nlogn)
-// Space Complexity: O(1)
+// Space Complexity: O(n)
 vector<int> twoNumberSum(vector<int> array, int targetSum)
 {
     sort(array.begin(), array.end());
