@@ -1,7 +1,7 @@
 #include <vector>
 using namespace std;
 
-// Time Complexity: O(n)
+// Time Complexity: O(nlogn)
 // Space Complexity: O(1)
 vector<int> twoNumberSum(vector<int> array, int targetSum)
 {
