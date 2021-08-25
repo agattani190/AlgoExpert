@@ -13,4 +13,5 @@ vector<int> twoSum(vector<int> &nums, int target) {
     }
     hashTable[nums[i]] = i;
   }
+  return {};
 }
