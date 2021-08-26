@@ -3,7 +3,7 @@
 using namespace std;
 
 // Time Complexity: O(sqrt(c))
-// Space Complexity: O(n)
+// Space Complexity: O(1)
 bool judgeSquareSum(int c) {
     int num1 = 0;
     int num2 = sqrt(c);
