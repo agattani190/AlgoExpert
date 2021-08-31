@@ -1,7 +1,7 @@
 #include <vector>
 using namespace std;
 
-// Average Time Complexity: O(logn)
+// Time Complexity: O(logn)
 // Space Complexity: O(1)
 int search(vector<int> &nums, int target) {
   int leftPtr = 0;
