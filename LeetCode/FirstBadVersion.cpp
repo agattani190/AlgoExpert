@@ -3,7 +3,7 @@ using namespace std;
 
 bool isBadVersion(int version);
 
-// Average Time Complexity: O(logn)
+// Time Complexity: O(logn)
 // Space Complexity: O(1)
 int firstBadVersion(int n) {
   int leftPtr = 0;
