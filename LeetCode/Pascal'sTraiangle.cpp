@@ -1,0 +1,17 @@
+#include <vector>
+using namespace std;
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n^2)
+vector<vector<int>> generate(int numRows) {
+  vector<vector<int>> result(numRows);
+  for (int i = 0; i < numRows; i++) {
+    result[i] = vector<int>(i + 1, 1);
+  }
+  for (int i = 2; i < numRows; i++) {
+    for (int j = 1; j < i; j++) {
+      result[i][j] = result[i - 1][j - 1] + result[i - 1][j];
+    }
+  }
+  return result;
+}
