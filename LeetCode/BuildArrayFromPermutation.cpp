@@ -5,7 +5,6 @@ using namespace std;
 // Space Complexity: O(1)
 vector<int> buildArray(vector<int> &nums) {
   int n = nums.size();
-  int x;
   for (int i = 0; i < n; i++) {
     nums[i] *= n;
   }
