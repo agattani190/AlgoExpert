@@ -8,8 +8,8 @@ int uniquePaths(int m, int n) {
   int b = min(m, n) - 1;
   int result = 1;
   for (int i = 1; i <= b; i++) {
-    result *= (a - i + 1);
     result /= i;
+    result *= (a - i + 1);
   }
   return result;
 }
