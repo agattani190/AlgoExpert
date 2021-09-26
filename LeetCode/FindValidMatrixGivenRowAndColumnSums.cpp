@@ -1,8 +1,8 @@
 #include <vector>
 using namespace std;
 
-// Time Complexity: O(n^2)
-// Space Complexity: O(n^2)
+// Time Complexity: O(mn)
+// Space Complexity: O(mn)
 vector<vector<int>> restoreMatrix(vector<int> &rowSum, vector<int> &colSum) {
   int m = rowSum.size();
   int n = colSum.size();
