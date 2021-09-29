@@ -24,7 +24,7 @@ int superEggDrop(int k, int n) {
       leftPtr = 1;
       rightPtr = j - 1;
       while (leftPtr <= rightPtr) {
-        midPtr = (leftPtr + rightPtr) / 2;
+        midPtr = leftPtr + ((rightPtr - leftPtr) / 2);
         dp[i][j] = 1 + max(dp[i - 1][midPtr - 1], dp[i][j - midPtr]);
         if (dp[i - 1][midPtr - 1] == dp[i][j - midPtr]) {
           break;
