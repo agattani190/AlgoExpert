@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// Time Complexity: O(n^3)
+// Time Complexity: O(n^2)
 // Space Complexity: O(n^2)
 string longestPalindromicSubstring(string s) {
   int n = s.size();
