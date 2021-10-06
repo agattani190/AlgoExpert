@@ -4,7 +4,7 @@ using namespace std;
 
 string getPrefix(string a, string b);
 
-// Average Time Complexity: O(s) - s is the number of characteres in all strings
+// Time Complexity: O(s) - s is the number of characteres in all strings
 // Space Complexity: O(1)
 string longestCommonPrefix(vector<string> &strs) {
   int n = strs.size();
