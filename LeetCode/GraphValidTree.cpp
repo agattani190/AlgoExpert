@@ -1,21 +1,22 @@
-
-
 #include <vector>
 using namespace std;
 
 int find(int x, vector<int> &tree);
 bool unite(int u, int v, vector<int> &tree, vector<int> &rank);
 
-// Average Time Complexity: O(m+n)
+// Average Time Complexity: O(n)
 // Space Complexity: O(n)
 bool validTree(int n, vector<vector<int>> &edges) {
+  int m = edges.size();
+  if (m != n - 1) {
+    return false;
+  }
   vector<int> tree(n);
   vector<int> rank(n);
   for (int i = 0; i < n; i++) {
     tree[i] = i;
     rank[i] = 1;
   }
-  int m = edges.size();
   for (int i = 0; i < m; i++) {
     if (!unite(edges[i][0], edges[i][1], tree, rank)) {
       return false;
