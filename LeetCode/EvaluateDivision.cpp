@@ -10,7 +10,7 @@ void unite(int u, int v, vector<int> &tree, vector<int> &rank);
 void bfs(int u, int v, vector<vector<pair<int, double>>> &graph,
          vector<pair<int, double>> &parent);
 
-// Time Complexity: O(n)
+// Average Time Complexity: O(mn)
 // Space Complexity: O(n)
 vector<double> calcEquation(vector<vector<string>> &equations,
                             vector<double> &values,
