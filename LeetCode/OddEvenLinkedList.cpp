@@ -10,7 +10,7 @@ struct ListNode {
 };
 
 // Time Complexity: O(n)
-// Space Complexity: O(n)
+// Space Complexity: O(1)
 ListNode *oddEvenList(ListNode *head) {
   if (!head || !head->next) {
     return head;
